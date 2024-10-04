@@ -4,6 +4,8 @@ December 9th-13th 2024 will see the third edition of the Oslo Bioinformatics Wor
 
 Any questions or registration modifications should be addressed to oslo-bioinfo-workshops@ifi.uio.no.
 
+Time and place: Dec. 9, 2024 9:00 AM – Dec. 13, 2024 4:00 PM, Ole Johan Dalshus
+
 ## Call for proposals
 
 Our primary goal is to foster an enriching learning environment for students and researchers who are passionate about bioinformatics and software development. We warmly invite you to contribute to OBiWoW 2024 by leading a workshop on a topic of your choice. If you're interested in sharing your expertise, please complete this workshop proposal form here https://nettskjema.no/a/442750. The deadline to submit your proposal is 6th of October.
