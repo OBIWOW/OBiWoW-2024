@@ -14,9 +14,9 @@ Linux/MacOS: Each time you start a new command line terminal, you can activate M
 
 ```
 source ~/miniforge3/bin/activate
-This is not needed if you choose yes for "Do you wish
-to update your shell profile to automatically initialize
-conda?" during installation.
+#This is not needed if you choose yes for "Do you wish
+#to update your shell profile to automatically initialize
+#conda?" during installation.
 ```
 
 Windows: Use the “Miniforge Prompt” to start Miniforge. This will set up everything so that conda and mamba are available.
