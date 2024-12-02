@@ -1,0 +1,6 @@
+# Exploring Perturbation-Linked scRNA-Seq and GeneSetR for Functional Genomics Analysis
+This workshop offers a comprehensive introduction to perturbation-linked single-cell RNA sequencing (scRNA-seq), a cutting-edge technique that combines genetic perturbations with single-cell transcriptomics to unravel gene functions and regulatory networks at an unprecedented resolution. Participants will learn about the principles of perturbation-linked scRNA-seq, its experimental workflow, and the advantages it offers over traditional methods, such as high-throughput functional screening and the ability to dissect complex biological systems at the single-cell level.  Building on this foundation, the workshop will introduce GeneSetR, a user-friendly tool designed to harness the power of Genome-wide Perturb-Seq (GWPS) data for in-depth analysis of user-defined gene lists. GeneSetR empowers researchers to interpret and cluster gene lists effectively, facilitating navigation through the recently available GWPS datasets.
+## Instructors
+Omer Faruk Kuzu
+## Live Troubleshooting Session
+## Software Requirements

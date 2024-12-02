@@ -1,1 +1,0 @@
-# There's a snake in my RNA-seq - Introductory course to single cells RNA-seq analysis with Python

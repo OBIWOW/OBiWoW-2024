@@ -1,1 +1,0 @@
-# Accelerating Genomics Workflows on GPUs: Hands-on with NVIDIA Parabricks

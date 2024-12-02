@@ -1,1 +1,0 @@
-# Streamlining Bioinformatics Data Pipelines with Omnipy

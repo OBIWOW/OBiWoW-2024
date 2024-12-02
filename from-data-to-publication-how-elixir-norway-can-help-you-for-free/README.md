@@ -1,1 +1,0 @@
-# From data to publication: how ELIXIR Norway can help you for free

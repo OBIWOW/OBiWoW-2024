@@ -1,0 +1,6 @@
+# Viral identification, quantification and functional annotation using shotgun metagenomic sequencing data analysis
+In this workshop we will give an overview of the existing tools for viral identification and functional annotation using shotgun metagenomic sequencing data. We will also present VirMake, a pipeline automating virome data analysis developed in the Rounge group. We will use a mock viral community to demonstrate the use of VirMake pipeline and further have a hands on tutorial on the downstream analysis of the output on viral taxonomy, quantification, and functions. Here the audience will learn the basics of the virome community analyses, including diversity and abundance estimation and normalization, beta diversity (i.e. diversity between samples) estimation, in addition to prophage characterisation, potential host identification, and functional characterisation including auxiliary metabolic genes. We will also discuss current limitations with viral data analysis.
+## Instructors
+Ekaterina Avershina, Einar Birkeland, Trine B Rounge
+## Live Troubleshooting Session
+## Software Requirements

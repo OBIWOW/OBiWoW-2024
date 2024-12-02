@@ -1,1 +1,0 @@
-# Workflow management and sharing with Nextflow and nf-core
