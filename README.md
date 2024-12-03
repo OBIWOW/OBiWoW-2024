@@ -6,4 +6,4 @@ Any questions or registration modifications should be addressed to oslo-bioinfo-
 
 Time and place: Dec. 9, 2024 9:00 AM – Dec. 13, 2024 4:00 PM, Ole Johan Dalshus
 
-See [the website]([https://github.com/OBIWOW/OBiWoW-2024/wiki](https://www.mn.uio.no/sbi/english/events/oslo-bioinformatics-workshop-week-2024/index.html)) for course info.
+See [the website](https://www.mn.uio.no/sbi/english/events/oslo-bioinformatics-workshop-week-2024/index.html) for course info.
