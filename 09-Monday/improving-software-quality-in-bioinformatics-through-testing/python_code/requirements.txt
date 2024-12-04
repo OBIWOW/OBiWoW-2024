@@ -1,0 +1,5 @@
+matplotlib
+numpy
+pandas
+pydeseq2
+pytest
