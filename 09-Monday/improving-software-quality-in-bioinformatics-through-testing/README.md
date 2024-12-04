@@ -26,14 +26,14 @@ It is preferred that you have an IDE such as Rstudio, Visual Studio, PyCharm or 
 
 To clone this repository:
 ```
-git clone https://github.com/ferenckata/nbd24_testing.git
+git clone git@github.com:OBIWOW/OBiWoW-2024.git
 
-cd nbd24_testing
+cd OBiWoW-2024
 ```
 
-To create and enter a conda environmen:
+To create and enter a conda environment:
 ```
-conda env create --file environment.yaml -n nbd2024
+conda env create --file environment.yaml -n obiwow2024
 
-conda activate nbd2024
+conda activate obiwow2024
 ```
