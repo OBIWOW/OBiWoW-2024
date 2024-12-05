@@ -5,7 +5,17 @@ What is testing? What types of tests are we usually performing and what types ar
 Katalin Ferenc, Ieva Rauluseviciute, Ladislav Hovan
 
 ## Live Troubleshooting Session
+In case you need help with any of the installations, you are welcome to join the zoom session below.
 
+```
+Ladislav Hovan is inviting you to a scheduled Zoom meeting.
+Topic: OBiWoW testing workshop troubleshooting session
+Time: Dec 6, 2024 11:00 AM Amsterdam, Berlin, Rome, Stockholm, Vienna
+Join Zoom Meeting
+https://uio.zoom.us/j/63146705986?pwd=ihaKEHaH7iyzyJCoWJ5b7vMZy2onuc.1
+Meeting ID: 631 4670 5986
+Passcode: 975258
+```
 
 ## Software Requirements
 Python or R installed on your computer (or virtual machine / container of your choice as long as you can move and edit files comfortably in it). It is recommended to have conda too for creating an environment for this workshop, but if you solve the requirements (`environment.yaml` file specifies them) with any other dependency management way it is all fine by us.
@@ -16,14 +26,14 @@ It is preferred that you have an IDE such as Rstudio, Visual Studio, PyCharm or 
 
 To clone this repository:
 ```
-git clone https://github.com/ferenckata/nbd24_testing.git
+git clone git@github.com:OBIWOW/OBiWoW-2024.git
 
-cd nbd24_testing
+cd OBiWoW-2024
 ```
 
-To create and enter a conda environmen:
+To create and enter a conda environment:
 ```
-conda env create --file environment.yaml -n nbd2024
+conda env create --file environment.yaml -n obiwow2024
 
-conda activate nbd2024
+conda activate obiwow2024
 ```
