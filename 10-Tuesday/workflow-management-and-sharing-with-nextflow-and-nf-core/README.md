@@ -22,14 +22,16 @@ Passcode: 141917
 Nextflow and nf-core to be installed.
 
 To clone this repository:
-```
-git clone git@github.com:OBIWOW/OBiWoW-2024.git
+
+```bash
+git https://github.com/OBIWOW/OBiWoW-2024.git
 
 cd OBiWoW-2024
 ```
 
 To create and enter a conda environment:
-```
+
+```bash
 conda env create --file nf-core.yaml -n obiwow2024
 
 conda activate obiwow2024
@@ -39,7 +41,7 @@ conda activate obiwow2024
 
 Install Nextflow following instructions here:
 
-```
+```bash
 https://www.nextflow.io/docs/latest/install.html
 ```
 
@@ -47,6 +49,6 @@ https://www.nextflow.io/docs/latest/install.html
 
 Install with pip:
 
-```
+```bash
 pip install nf-core
 ```
