@@ -41,7 +41,7 @@ mkdir demo_pipeline
 cd demo_pipeline
 
 nextflow run nf-core/demo -r 1.0.1 -profile test,apptainer --outdir test_profile
-
+nextflow run nf-core/demo -r 1.0.1 -profile test,conda --outdir test_profile
 ```
 
 ## RNA-seq pipeline ##
@@ -53,5 +53,30 @@ mkdir rnaseq_pipeline
 cd rnaseq_pipeline
 
 nextflow run nf-core/rnaseq -r 3.16.1 -profile test,singularity --outdir test_profile
+
+```
+
+## scRNA-seq pipeline ##
+
+Pipeline page [here](https://nf-co.re/scrnaseq/2.7.1/).
+
+```bash
+mkdir scrnaseq_pipeline
+cd scrnaseq_pipeline
+
+VERSION=108
+wget -L ftp://ftp.ensembl.org/pub/release-$VERSION/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
+wget -L ftp://ftp.ensembl.org/pub/release-$VERSION/gtf/homo_sapiens/Homo_sapiens.GRCh38.$VERSION.gtf.gz
+
+nextflow run nf-core/scrnaseq \
+    -r 2.7.1 \
+    --input ../samplesheet_scrnaseq.csv \
+    --outdir ./results \
+    --genome GRCh38 \
+    --fasta Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz \
+    --gtf Homo_sapiens.GRCh38.108.gtf.gz \
+    -profile apptainer \
+    --protocol 10XV2 \
+    -c custom.config
 
 ```
