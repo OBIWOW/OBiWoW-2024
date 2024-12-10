@@ -75,8 +75,9 @@ nextflow run nf-core/scrnaseq \
     --genome GRCh38 \
     --fasta Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz \
     --gtf Homo_sapiens.GRCh38.108.gtf.gz \
-    -profile apptainer \
+    -profile singularity \
     --protocol 10XV2 \
+    --aligner star \
     -c custom.config
 
 ```
