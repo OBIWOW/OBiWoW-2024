@@ -37,6 +37,10 @@ conda env create --file nf-core.yaml -n obiwow2024
 conda activate obiwow2024
 ```
 
+### How to do it without the environment? ###
+
+If the environment doesn't work or you don't want to create one, just install Nextflow and nf-core yourself and make sure they are available on a path. You can check the success of installation with ```nextflow -h``` and ```nf-core -h```.
+
 #### Nextflow ####
 
 Install Nextflow following instructions here:
