@@ -4,3 +4,4 @@ This workshop will explore deep learning applications in drug discovery, focusin
 Damla Övek Baydar
 ## Live Troubleshooting Session
 ## Software Requirements
+Please download conda and create environment using provided yaml: conda env create -f environment.yml

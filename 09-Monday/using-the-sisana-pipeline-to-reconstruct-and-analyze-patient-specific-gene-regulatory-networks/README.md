@@ -2,5 +2,5 @@
 As biologists, we frequently have a lot of data to work with but need user-friendly tools to understand the secrets our data holds. LIONESS (Linear Interpolation to Obtain Network Estimates for Single Samples; Kuijjer et al., 2019) provided a novel method for modeling gene regulatory networks, which model the interactions between transcription factors and target genes. A new tool called Single Sample Network Analysis (SiSaNA) has recently been developed, which uses the LIONESS methodology to create networks, but allows the user to both create and analyze such networks using only the command line, omitting any need for programming expertise.  This workshop will first teach participants how to use transcriptomic data to reconstruct single-sample gene regulatory networks using SiSaNA. Then, participants will learn how to use SiSaNA to understand the information presented in these networks, as well as how to compare features of these networks between sample groups to identify key genes, transcription factors, and pathways of interest that distinguish these groups from one another.
 ## Instructors
 Nolan Newman
-## Live Troubleshooting Session
-## Software Requirements
+## Instructions
+Follow the steps for installation and running the code at https://github.com/newmanno/sisana/tree/main. In the /docs/ folder of that repo, you will find a document titled questions.md. You will need to answer these questions as you work through the SiSaNA pipeline during the workshop.

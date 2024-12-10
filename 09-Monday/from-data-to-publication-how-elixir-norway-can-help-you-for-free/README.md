@@ -3,4 +3,14 @@ Are you working on a PhD or PostDoc project or applying for funding? Most projec
 ## Instructors
 Federico Bianchini, Jon Lærdahl
 ## Live Troubleshooting Session
+There will be no live troubleshooting session for DSW due to the main speaker attending a conference. 
+Please contact [Federico Bianchini](https://www.mn.uio.no/sbi/english/people/fredebi/) by email if assistance is required.
+For issues on NeLS/Galaxy, it is recommended to contact the ELIXIR helpdesk (support@elixir.no). 
+
 ## Software Requirements
+The DSW part of the workshop requires an account on [ELIXIR Norway's instance of DSW](https://norway.dsw.elixir-europe.org/wizard/).
+The account is created by logging into the service by either Feide or using a dedicated username and password.
+Accessing NeLS and Galaxy requires also Feide. Alternatively, a dedicated NeLS identity can be used. You would need to 
+apply for this beforehand. Read more details at https://nels.bioinfo.no/.
+
+
