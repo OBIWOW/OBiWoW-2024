@@ -1,0 +1,68 @@
+{
+  "layer": [
+    {
+      "name": "baseline",
+      "data": {
+        "values": [{}]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "lightgray"
+      },
+      "encoding": {
+        "y": { "datum": 0, "type": "ordinal" }
+      }
+    },
+    {
+      "data": {
+        "sequence": { "start": 0, "stop": 50 }
+      },
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum.data % 5 - 2",
+          "as": "y"
+        }
+      ],
+      "layer": [
+        {
+          "name": "sticks",
+          "mark": {
+            "type": "rule"
+          },
+          "encoding": {
+            "y2": { "datum": 0 }
+          }
+        },
+        {
+          "name": "balls",
+          "mark": {
+            "type": "point",
+            "size": 100
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "data",
+          "type": "index"
+        },
+        "y": {
+          "field": "y",
+          "type": "ordinal",
+          "scale": {
+            "domain": [2, 1, 0, -1, -2]
+          }
+        },
+        "color": {
+          "field": "y",
+          "type": "ordinal",
+          "scale": {
+            "domain": [2, 1, 0, -1, -2],
+            "range": ["firebrick", "orange", "#f0f000", "lightgreen", "green"]
+          }
+        }
+      }
+    }
+  ]
+}

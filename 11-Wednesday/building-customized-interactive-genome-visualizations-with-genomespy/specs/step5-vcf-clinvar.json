@@ -1,0 +1,126 @@
+{
+  "$schema": "https://unpkg.com/@genome-spy/core/dist/schema.json",
+
+  "genome": {
+    "name": "hg38"
+  },
+
+  "height": { "step": 15 },
+  "layer": [
+    {
+      "name": "baseline",
+      "data": {
+        "values": [{}]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "lightgray"
+      },
+      "encoding": {
+        "y": { "datum": "Uncertain significance", "type": "ordinal" }
+      }
+    },
+    {
+      "data": {
+        "lazy": {
+          "type": "vcf",
+          "url": "clinvar.vcf.gz",
+          "addChrPrefix": true,
+          "windowSize": 6000000
+        }
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.INFO['CLNVC'] == 'single_nucleotide_variant'"
+        },
+        {
+          "type": "formula",
+          "expr": "replace(datum.INFO['CLNSIG'], /_/g, ' ')",
+          "as": "Germline classification"
+        },
+        {
+          "type": "regexExtract",
+          "field": "Germline classification",
+          "regex": "^([^/]+)",
+          "as": "Germline classification"
+        },
+        {
+          "type": "formula",
+          "expr": "replace(datum['Germline classification'], /^Conflicting.*/g, 'Conflicting')",
+          "as": "Germline classification"
+        },
+        {
+          "type": "filter",
+          "expr": "datum['Germline classification'] == 'Pathogenic' || datum['Germline classification'] == 'Likely pathogenic' || datum['Germline classification'] == 'Uncertain significance' || datum['Germline classification'] == 'Likely benign' || datum['Germline classification'] == 'Benign' || datum['Germline classification'] == 'Conflicting'"
+        }
+      ],
+      "layer": [
+        {
+          "name": "sticks",
+          "mark": {
+            "type": "rule",
+            "tooltip": false
+          },
+          "encoding": {
+            "y2": { "datum": "Uncertain significance" }
+          }
+        },
+        {
+          "name": "balls",
+          "mark": {
+            "type": "point",
+            "size": 100,
+            "geometricZoomBound": 12
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "chrom": "CHROM",
+          "pos": "POS",
+          "type": "locus"
+        },
+        "y": {
+          "field": "Germline classification",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Pathogenic",
+              "Likely pathogenic",
+              "Uncertain significance",
+              "Likely benign",
+              "Benign",
+              "Conflicting"
+            ]
+          },
+          "axis": {
+            "minExtent": 130
+          }
+        },
+        "color": {
+          "field": "Germline classification",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Pathogenic",
+              "Likely pathogenic",
+              "Uncertain significance",
+              "Likely benign",
+              "Benign",
+              "Conflicting"
+            ],
+            "range": [
+              "firebrick",
+              "orange",
+              "#f0f000",
+              "#00a000",
+              "darkgreen",
+              "gray"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

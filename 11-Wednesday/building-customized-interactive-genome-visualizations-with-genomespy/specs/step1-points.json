@@ -1,0 +1,18 @@
+{
+  "data": {
+    "sequence": { "start": 0, "stop": 50 }
+  },
+  "mark": {
+    "type": "point"
+  },
+  "encoding": {
+    "x": {
+      "field": "data",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "data",
+      "type": "quantitative"
+    }
+  }
+}

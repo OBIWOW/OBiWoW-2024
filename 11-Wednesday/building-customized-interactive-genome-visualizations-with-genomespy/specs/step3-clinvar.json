@@ -1,0 +1,100 @@
+{
+  "genome": {
+    "name": "hg38"
+  },
+
+  "layer": [
+    {
+      "name": "baseline",
+      "data": {
+        "values": [{}]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "lightgray"
+      },
+      "encoding": {
+        "y": { "datum": "Uncertain significance", "type": "ordinal" }
+      }
+    },
+    {
+      "data": {
+        "name": "clinvar_result.txt"
+      },
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum['Variant type'] == 'single nucleotide variant' && datum.GRCh38Chromosome != null"
+        },
+        {
+          "type": "formula",
+          "expr": "datum['Germline classification'] == 'Conflicting classifications of pathogenicity' ? 'Conflicting' : datum['Germline classification']",
+          "as": "Germline classification"
+        },
+        {
+          "type": "regexExtract",
+          "field": "Germline classification",
+          "regex": "^([^/]+)",
+          "as": "Germline classification"
+        }
+      ],
+      "layer": [
+        {
+          "name": "sticks",
+          "mark": {
+            "type": "rule"
+          },
+          "encoding": {
+            "y2": { "datum": "Uncertain significance" }
+          }
+        },
+        {
+          "name": "balls",
+          "mark": {
+            "type": "point",
+            "size": 100
+          }
+        }
+      ],
+      "encoding": {
+        "x": {
+          "chrom": "GRCh38Chromosome",
+          "pos": "GRCh38Location",
+          "type": "locus"
+        },
+        "y": {
+          "field": "Germline classification",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Pathogenic",
+              "Likely pathogenic",
+              "Uncertain significance",
+              "Likely benign",
+              "Benign",
+              "Conflicting"
+            ]
+          },
+          "axis": {
+            "minExtent": 130
+          }
+        },
+        "color": {
+          "field": "Germline classification",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Pathogenic",
+              "Likely pathogenic",
+              "Uncertain significance",
+              "Likely benign",
+              "Benign",
+              "Conflicting"
+            ],
+            "range": ["firebrick", "orange", "#f0f000", "lightgreen", "green", "gray"]
+          }
+        }
+      }
+    }
+  ]
+}
